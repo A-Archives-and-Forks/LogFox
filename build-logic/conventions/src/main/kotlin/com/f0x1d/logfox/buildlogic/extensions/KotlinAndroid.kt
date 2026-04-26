@@ -10,6 +10,7 @@ internal fun Project.configureKotlinAndroid(
     commonExtension: CommonExtension,
 ) = with(commonExtension) {
     compileSdk = version("compileSdk")
+    buildToolsVersion = versionString("buildTools")
 
     with(defaultConfig) {
         minSdk = version("minSdk")
